@@ -7,10 +7,7 @@ from django.forms.widgets import Textarea
 from django.utils.safestring import mark_safe
 
 
-try:
-    from django.forms.util import flatatt
-except ImportError:
-    from django.forms.utils import flatatt
+from django.forms.utils import flatatt
 
 try:
     unicode = unicode
